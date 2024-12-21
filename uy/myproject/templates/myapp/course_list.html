@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Kurslar royxati</title>
+</head>
+<body>
+    <h1>Kurslar royxati</h1>
+    <ul>
+        {% for course in courses %}
+            <li>{{ course.name }}: {{ course.description }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
